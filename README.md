@@ -17,8 +17,8 @@ To run the project locally, follow these steps:
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/yourusername/talent-scout-ai.git
-   cd talent-scout-ai
+   git clone https://github.com/Varnanarajeev/TalentScout.ai.git
+   
    ```
 
 2. **Create a virtual environment (optional but recommended)**  
@@ -36,7 +36,7 @@ To run the project locally, follow these steps:
    - `GROQ_API_KEY=your_groq_key_here`
 
 5. **Run the Streamlit app**  
-   ```bash
+   ```
    streamlit run app.py
    ```
 
