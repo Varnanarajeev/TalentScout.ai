@@ -1,7 +1,12 @@
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage
+import os
+from dotenv import load_dotenv
 
-groq_api_key = "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"
+load_dotenv()
+
+groq_api_key = os.getenv("GROQ_API_KEY")
+
 
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
 
