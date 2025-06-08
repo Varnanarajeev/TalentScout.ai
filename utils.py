@@ -4,7 +4,6 @@ from langchain_core.messages import HumanMessage
 import os
 
 
-
 llm = ChatGroq(groq_api_key=st.secrets["groq_api_key"], model_name="Llama3-8b-8192")
 
 def generate_response(prompt):
