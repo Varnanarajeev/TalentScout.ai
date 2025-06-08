@@ -72,7 +72,7 @@ def main():
                 st.session_state.details["tech_stack"] = tech_stack
                 prompt = generate_tech_questions_prompt(tech_stack)
                 response = generate_response(prompt)
-
+                st.code(response, language="markdown") 
                 questions = [line.strip("-• ").strip()
                              for line in response.split("\n")
                              if line.strip().lower().startswith(("-", "•"))]
